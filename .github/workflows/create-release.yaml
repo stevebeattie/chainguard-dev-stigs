@@ -15,7 +15,7 @@ jobs:
   validate:
     # Only run for merged prerelease/v* PRs
     if: >
-      github.repository_owner == 'chainguard-dev' &&
+      github.repository_owner == 'stevebeattie' &&
       github.event.pull_request.merged == true &&
       startsWith(github.event.pull_request.head.ref, 'prerelease/v')
     runs-on: ubuntu-latest

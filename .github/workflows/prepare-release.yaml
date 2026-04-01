@@ -16,7 +16,7 @@ permissions: {}
 jobs:
   prepare-release:
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'chainguard-dev' }}
+    if: ${{ github.repository_owner == 'stevebeattie' }}
     timeout-minutes: 10
     permissions:
       contents: read
