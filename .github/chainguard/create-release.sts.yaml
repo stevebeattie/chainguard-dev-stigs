@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 issuer: https://token.actions.githubusercontent.com
-subject: repo:stevebeattie/chainguard-dev-stigs:ref:refs/heads/main
+subject: repo:stevebeattie/chainguard-dev-stigs:pull_request
 claim_pattern:
   job_workflow_ref: stevebeattie/chainguard-dev-stigs/.github/workflows/create-release.yaml@refs/heads/main
 
