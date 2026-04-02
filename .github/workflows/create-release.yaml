@@ -17,8 +17,6 @@ jobs:
     if: >
       github.repository_owner == 'stevebeattie' &&
       github.event.pull_request.merged == true &&
-      github.event.sender.type == 'Bot' &&
-      github.event.sender.login == 'octo-sts[bot]' &&
       startsWith(github.event.pull_request.head.ref, 'prerelease/v') &&
       contains(github.event.pull_request.labels.*.name, 'release')
     runs-on: ubuntu-latest
